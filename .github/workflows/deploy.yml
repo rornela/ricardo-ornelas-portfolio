@@ -13,6 +13,9 @@ concurrency:
   group: "pages"
   cancel-in-progress: false
 
+env:
+  PUBLIC_URL: https://rornela.github.io/ricardo-ornelas-portfolio
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
