@@ -3,6 +3,7 @@
     "name": "Portfolio App",
     "slug": "portfolio-app",
     "version": "1.0.0",
+    "homepage": "https://rornela.github.io/ricardo-ornelas-portfolio",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
