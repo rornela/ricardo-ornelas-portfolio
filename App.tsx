@@ -493,6 +493,11 @@ const App: React.FC = () => {
       {/* Header */}
       <View style={styles.header}>
         <View style={styles.logoContainer}>
+          <Image 
+            source={require('./assets/logo.png')} 
+            style={styles.logoImage}
+            resizeMode="contain"
+          />
           <Text style={styles.logo}>Ricardo Ornelas</Text>
         </View>
         <View style={styles.nav}>
@@ -543,8 +548,8 @@ const styles = StyleSheet.create({
     gap: 12,
   },
   logoImage: {
-    width: 40,
-    height: 40,
+    width: 50,
+    height: 50,
   },
   logo: {
     fontSize: 20,
