@@ -194,6 +194,8 @@ const App: React.FC = () => {
   const [currentPage, setCurrentPage] = useState('home');
   const fadeAnim = new Animated.Value(0);
 
+  console.log('App component is rendering, currentPage:', currentPage);
+
   useEffect(() => {
     Animated.timing(fadeAnim, {
       toValue: 1,
@@ -482,6 +484,11 @@ const App: React.FC = () => {
   return (
     <View style={styles.container}>
       <StatusBar barStyle="dark-content" backgroundColor="#ffffff" />
+      {__DEV__ && (
+        <View style={{ position: 'absolute', top: 50, left: 10, right: 10, backgroundColor: 'yellow', padding: 10, zIndex: 1000 }}>
+          <Text style={{ color: 'black', fontSize: 12 }}>Debug Mode: App is loading...</Text>
+        </View>
+      )}
       
       {/* Header */}
       <View style={styles.header}>
@@ -490,6 +497,7 @@ const App: React.FC = () => {
             source={require('./assets/logo.png')} 
             style={styles.logoImage}
             resizeMode="contain"
+            defaultSource={require('./assets/logo.png')}
           />
           <Text style={styles.logo}>Ricardo Ornelas</Text>
         </View>
