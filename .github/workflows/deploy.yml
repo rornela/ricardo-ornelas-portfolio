@@ -1,4 +1,3 @@
-# GitHub Pages Deployment Workflow for React Native Portfolio
 name: Deploy to GitHub Pages
 
 on:
