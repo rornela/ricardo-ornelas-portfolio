@@ -493,12 +493,6 @@ const App: React.FC = () => {
       {/* Header */}
       <View style={styles.header}>
         <View style={styles.logoContainer}>
-          <Image 
-            source={require('./assets/logo.png')} 
-            style={styles.logoImage}
-            resizeMode="contain"
-            defaultSource={require('./assets/logo.png')}
-          />
           <Text style={styles.logo}>Ricardo Ornelas</Text>
         </View>
         <View style={styles.nav}>
