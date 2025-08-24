@@ -35,6 +35,8 @@ jobs:
       
     - name: Build for web
       run: npx expo export:web
+      env:
+        PUBLIC_URL: /ricardo-ornelas-portfolio/
       
     - name: Setup Pages
       uses: actions/configure-pages@v4
