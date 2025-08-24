@@ -492,14 +492,16 @@ const App: React.FC = () => {
       
       {/* Header */}
       <View style={styles.header}>
-        <View style={styles.logoContainer}>
-          <Image 
-            source={require('./assets/logo.png')} 
-            style={styles.logoImage}
-            resizeMode="contain"
-          />
-          <Text style={styles.logo}>Ricardo Ornelas</Text>
-        </View>
+        {width >= 768 && (
+          <View style={styles.logoContainer}>
+            <Image 
+              source={require('./assets/logo.png')} 
+              style={styles.logoImage}
+              resizeMode="contain"
+            />
+            <Text style={styles.logo}>Ricardo Ornelas</Text>
+          </View>
+        )}
         <View style={styles.nav}>
           {[
             { key: 'home', label: 'Home' },
@@ -533,7 +535,7 @@ const styles = StyleSheet.create({
   },
   header: {
     flexDirection: 'row',
-    justifyContent: 'space-between',
+    justifyContent: width < 768 ? 'center' : 'space-between',
     alignItems: 'center',
     paddingHorizontal: 24,
     paddingTop: Platform.OS === 'ios' ? 50 : 20,
@@ -559,7 +561,7 @@ const styles = StyleSheet.create({
   },
   nav: {
     flexDirection: 'row',
-    gap: 32,
+    gap: width < 768 ? 20 : 32,
   },
   navItem: {
     paddingVertical: 8,
