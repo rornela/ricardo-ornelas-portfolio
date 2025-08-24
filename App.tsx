@@ -295,9 +295,9 @@ const App: React.FC = () => {
             values.
           </Text>
           <Text style={styles.aboutText}>
-            My role as a Non-Profit Technology Consultant for Stages of Freedom highlights my 
+            My previous role as a Non-Profit Technology Consultant for Stages of Freedom highlights my 
             belief that technology should serve people and communities, not just businesses. 
-            There, I apply my technical skills alongside my lived experience to drive projects 
+            There, I applied my technical skills alongside my lived experience to drive projects 
             that make a real social impact.
           </Text>
           <Text style={styles.aboutText}>
