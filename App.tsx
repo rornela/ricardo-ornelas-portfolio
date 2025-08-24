@@ -492,16 +492,14 @@ const App: React.FC = () => {
       
       {/* Header */}
       <View style={styles.header}>
-        {width >= 768 && (
-          <View style={styles.logoContainer}>
-            <Image 
-              source={require('./assets/logo.png')} 
-              style={styles.logoImage}
-              resizeMode="contain"
-            />
-            <Text style={styles.logo}>Ricardo Ornelas</Text>
-          </View>
-        )}
+        <View style={styles.logoContainer}>
+          <Image 
+            source={require('./assets/logo.png')} 
+            style={styles.logoImage}
+            resizeMode="contain"
+          />
+          <Text style={styles.logo}>Ricardo Ornelas</Text>
+        </View>
         <View style={styles.nav}>
           {[
             { key: 'home', label: 'Home' },
@@ -535,11 +533,11 @@ const styles = StyleSheet.create({
   },
   header: {
     flexDirection: 'row',
-    justifyContent: width < 768 ? 'center' : 'space-between',
+    justifyContent: 'space-between',
     alignItems: 'center',
-    paddingHorizontal: 24,
+    paddingHorizontal: width < 768 ? 16 : 24,
     paddingTop: Platform.OS === 'ios' ? 50 : 20,
-    paddingBottom: 20,
+    paddingBottom: width < 768 ? 12 : 20,
     backgroundColor: '#ffffff',
     borderBottomWidth: 1,
     borderBottomColor: '#f5f5f5',
@@ -547,31 +545,32 @@ const styles = StyleSheet.create({
   logoContainer: {
     flexDirection: 'row',
     alignItems: 'center',
-    gap: 12,
+    gap: width < 768 ? 8 : 12,
   },
   logoImage: {
-    width: 50,
-    height: 50,
+    width: width < 768 ? 32 : 50,
+    height: width < 768 ? 32 : 50,
   },
   logo: {
-    fontSize: 20,
+    fontSize: width < 768 ? 16 : 20,
     fontWeight: '600',
     color: '#000000',
     letterSpacing: -0.5,
   },
   nav: {
     flexDirection: 'row',
-    gap: width < 768 ? 20 : 32,
+    gap: width < 768 ? 12 : 32,
   },
   navItem: {
-    paddingVertical: 8,
+    paddingVertical: width < 768 ? 4 : 8,
+    paddingHorizontal: width < 768 ? 2 : 0,
   },
   activeNavItem: {
     borderBottomWidth: 2,
     borderBottomColor: '#000000',
   },
   navText: {
-    fontSize: 14,
+    fontSize: width < 768 ? 12 : 14,
     color: '#666666',
     fontWeight: '400',
   },
