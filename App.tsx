@@ -493,7 +493,7 @@ const App: React.FC = () => {
             style={styles.logoImage}
             resizeMode="contain"
           />
-          <Text style={styles.logo}>Ricardo Ornelas</Text>
+          {width >= 768 && <Text style={styles.logo}>Ricardo Ornelas</Text>}
         </View>
         <View style={styles.nav}>
           {[
