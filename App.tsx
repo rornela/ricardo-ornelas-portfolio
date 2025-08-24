@@ -483,12 +483,7 @@ const App: React.FC = () => {
 
   return (
     <View style={styles.container}>
-      <StatusBar barStyle="dark-content" backgroundColor="#ffffff" />
-      {__DEV__ && (
-        <View style={{ position: 'absolute', top: 50, left: 10, right: 10, backgroundColor: 'yellow', padding: 10, zIndex: 1000 }}>
-          <Text style={{ color: 'black', fontSize: 12 }}>Debug Mode: App is loading...</Text>
-        </View>
-      )}
+            <StatusBar barStyle="dark-content" backgroundColor="#ffffff" />
       
       {/* Header */}
       <View style={styles.header}>
