@@ -316,7 +316,7 @@ const App: React.FC = () => {
           
           <View style={styles.educationCard}>
             <Text style={styles.educationTitle}>Education</Text>
-            <Text style={styles.degree}>Bachelor of Arts in Computer Science</Text>
+            <Text style={styles.degree}>Bachelor's in Computer Science</Text>
             <Text style={styles.school}>Brown University</Text>
             <Text style={styles.graduation}>Graduated May 2025 • GPA: 3.6/4.0</Text>
             <Text style={styles.awards}>Sidney E. Frank Scholar</Text>
