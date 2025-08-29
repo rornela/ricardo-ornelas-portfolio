@@ -1,6 +1,6 @@
 # Portfolio Website
 
-A sleek, minimal portfolio website built with React Native and Expo, designed for a recent Brown University Computer Science & Economics graduate seeking software engineering opportunities.
+A sleek, minimal portfolio website built with React Native and Expo.
 
 ## Features
 
@@ -128,15 +128,3 @@ PortfolioApp/
 3. Make your changes
 4. Test thoroughly
 5. Submit a pull request
-
-## License
-
-This project is open source and available under the [MIT License](LICENSE).
-
-## Contact
-
-For questions or support, please reach out through the contact information provided in the portfolio.
-
----
-
-**Live Demo**: [View Portfolio](https://rornela.github.io/ricardo-ornelas-portfolio)
