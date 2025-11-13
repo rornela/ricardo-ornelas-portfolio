@@ -38,21 +38,6 @@ interface Experience {
 
 const projects: Project[] = [
   {
-    id: 1,
-    title: 'TaskTrak - Task Management Platform',
-    description: 'Comprehensive task management platform with automated scheduling algorithm and real-time collaboration features.',
-    technologies: ['React', 'Firebase', 'JavaScript', 'CSS', 'HTML'],
-    year: '2023',
-    link: 'https://cs0320-s2023.github.io/TaskTrak/',
-    highlights: [
-      'Collaboratively designed and developed comprehensive task management platform',
-      'Built responsive frontend using React with Firebase backend integration',
-      'Implemented real-time data synchronization for seamless collaboration',
-      'Conducted market analysis and created financial projections',
-      'Automated scheduling algorithm for optimal task distribution'
-    ]
-  },
-  {
     id: 2,
     title: 'Music Streaming Platform',
     description: 'Web-based music streaming platform with AI-driven music transition detection and real-time audio processing.',
@@ -65,6 +50,51 @@ const projects: Project[] = [
       'Implemented AI-driven music transition detection algorithms',
       'Optimized application performance, reducing load times by 40%',
       'Built user authentication system with secure access controls'
+    ]
+  },
+  {
+    id: 6,
+    title: 'Squash - Habit & Craving Journal',
+    description: 'Mobile habit companion to journal cravings, positives, and bumps with a weekly snapshot and full calendar. 100% on-device storage for privacy.',
+    technologies: ['React Native', 'Expo', 'Expo Router', 'TypeScript', 'AsyncStorage'],
+    year: '2025',
+    link: 'https://github.com/rornela/HabitTracker',
+    highlights: [
+      'On-device journaling (no backend) using AsyncStorage with resilient Entry model',
+      'Weekly dashboard with color-coded dots and “days since bump” insight',
+      'Full-month calendar (6×7 grid) with local date parsing to avoid UTC drift',
+      'Dynamic journaling screens per type with supportive, color-aware UI',
+      'Expo Router stacks with onboarding gating via AsyncStorage',
+      'Themed components and safe-area handling for accessible, dark UI'
+    ]
+  },
+  {
+    id: 5,
+    title: 'NLP Judicial Document Analysis',
+    description: 'Machine learning solution for automated classification of Latin American judicial documents using BERT framework.',
+    technologies: ['Python', 'BERT', 'NLP', 'Machine Learning', 'Data Analysis'],
+    year: '2024',
+    highlights: [
+      'Developed NLP solutions using BERT framework for 1,000+ judicial documents',
+      'Implemented automated classification for Latin American court systems',
+      'Applied bias detection techniques for fair algorithmic recommendations',
+      'Conducted comprehensive literature reviews and data preprocessing',
+      'Correlated document similarity with crime categories and sentencing patterns'
+    ]
+  },
+  {
+    id: 1,
+    title: 'TaskTrak - Task Management Platform',
+    description: 'Comprehensive task management platform with automated scheduling algorithm and real-time collaboration features.',
+    technologies: ['React', 'Firebase', 'JavaScript', 'CSS', 'HTML'],
+    year: '2023',
+    link: 'https://cs0320-s2023.github.io/TaskTrak/',
+    highlights: [
+      'Collaboratively designed and developed comprehensive task management platform',
+      'Built responsive frontend using React with Firebase backend integration',
+      'Implemented real-time data synchronization for seamless collaboration',
+      'Conducted market analysis and created financial projections',
+      'Automated scheduling algorithm for optimal task distribution'
     ]
   },
   {
@@ -94,20 +124,6 @@ const projects: Project[] = [
       'Designed promotional materials and marketing collateral using Adobe Creative Suite',
       'Streamlined donation processing through custom database solutions',
       'Coordinated with institutional clients for rare book acquisitions and sales'
-    ]
-  },
-  {
-    id: 5,
-    title: 'NLP Judicial Document Analysis',
-    description: 'Machine learning solution for automated classification of Latin American judicial documents using BERT framework.',
-    technologies: ['Python', 'BERT', 'NLP', 'Machine Learning', 'Data Analysis'],
-    year: '2024',
-    highlights: [
-      'Developed NLP solutions using BERT framework for 1,000+ judicial documents',
-      'Implemented automated classification for Latin American court systems',
-      'Applied bias detection techniques for fair algorithmic recommendations',
-      'Conducted comprehensive literature reviews and data preprocessing',
-      'Correlated document similarity with crime categories and sentencing patterns'
     ]
   }
 ];
