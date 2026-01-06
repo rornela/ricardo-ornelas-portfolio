@@ -38,6 +38,21 @@ interface Experience {
 
 const projects: Project[] = [
   {
+    id: 7,
+    title: 'SpaSync – AI-Powered MedSpa Lead Gen Widget',
+    description: 'A "Scan-to-Estimate" embeddable widget for aesthetic clinics that uses browser-based computer vision to analyze facial muscles and calculate personalized dosage estimates.',
+    technologies: ['Next.js 16', 'TypeScript', 'Supabase', 'MediaPipe', 'OpenAI', 'Tailwind CSS'],
+    year: '2025',
+    link: 'https://spasync.io',
+    highlights: [
+      'Implemented real-time facial landmark detection (468 points) directly in the browser using WebAssembly',
+      'Designed a standalone build pipeline using esbuild to bundle the widget into a single 25KB script',
+      'Solved cross-origin communication issues between host website and widget iframe using window.postMessage',
+      'Built a secure SaaS dashboard using Next.js 16 and Supabase RLS for clinics to manage leads',
+      'Developed a hybrid analysis engine combining client-side CV with server-side OpenAI logic'
+    ]
+  },
+  {
     id: 2,
     title: 'Music Streaming Platform',
     description: 'Web-based music streaming platform with AI-driven music transition detection and real-time audio processing.',
