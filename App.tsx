@@ -53,21 +53,6 @@ const projects: Project[] = [
     ]
   },
   {
-    id: 2,
-    title: 'Music Streaming Platform',
-    description: 'Web-based music streaming platform with AI-driven music transition detection and real-time audio processing.',
-    technologies: ['React', 'Node.js', 'AI/ML', 'Web Audio API', 'Real-time Processing'],
-    year: '2024',
-    link: 'https://github.com/johnsfarrell/djmixes.git',
-    highlights: [
-      'Led development of responsive web-based music streaming platform',
-      'Collaborated with 4-person backend team for seamless integration',
-      'Implemented AI-driven music transition detection algorithms',
-      'Optimized application performance, reducing load times by 40%',
-      'Built user authentication system with secure access controls'
-    ]
-  },
-  {
     id: 6,
     title: 'Squash - Habit & Craving Journal',
     description: 'Mobile habit companion to journal cravings, positives, and bumps with a weekly snapshot and full calendar. 100% on-device storage for privacy.',
@@ -140,10 +125,39 @@ const projects: Project[] = [
       'Streamlined donation processing through custom database solutions',
       'Coordinated with institutional clients for rare book acquisitions and sales'
     ]
+  },
+  {
+    id: 2,
+    title: 'Music Streaming Platform',
+    description: 'Web-based music streaming platform with AI-driven music transition detection and real-time audio processing.',
+    technologies: ['React', 'Node.js', 'AI/ML', 'Web Audio API', 'Real-time Processing'],
+    year: '2024',
+    link: 'https://github.com/johnsfarrell/djmixes.git',
+    highlights: [
+      'Led development of responsive web-based music streaming platform',
+      'Collaborated with 4-person backend team for seamless integration',
+      'Implemented AI-driven music transition detection algorithms',
+      'Optimized application performance, reducing load times by 40%',
+      'Built user authentication system with secure access controls'
+    ]
   }
 ];
 
 const experiences: Experience[] = [
+  {
+    id: 5,
+    title: 'Systems Support Specialist',
+    company: 'Arizona State University',
+    location: 'Tempe, AZ',
+    duration: 'October 2025 – Present',
+    description: 'Provide advanced technical support and system administration for university IT infrastructure, focusing on identity management and software deployment.',
+    achievements: [
+      'Managing enterprise-level identity access (Active Directory) and software deployment, gaining insight into large-scale IT infrastructure',
+      'Translating complex technical constraints to non-technical stakeholders to ensure seamless adoption of new software tools',
+      'Conducting deep-dive technical troubleshooting on complex OS (Windows/macOS) and network configuration issues'
+    ],
+    technologies: ['Active Directory', 'Windows/macOS Administration', 'Network Configuration', 'Enterprise Security', 'Software Deployment']
+  },
   {
     id: 1,
     title: 'Full-stack Developer',
