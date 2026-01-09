@@ -145,20 +145,6 @@ const projects: Project[] = [
 
 const experiences: Experience[] = [
   {
-    id: 5,
-    title: 'Systems Support Specialist',
-    company: 'Arizona State University',
-    location: 'Tempe, AZ',
-    duration: 'October 2025 – Present',
-    description: 'Provide advanced technical support and system administration for university IT infrastructure, focusing on identity management and software deployment.',
-    achievements: [
-      'Managing enterprise-level identity access (Active Directory) and software deployment, gaining insight into large-scale IT infrastructure',
-      'Translating complex technical constraints to non-technical stakeholders to ensure seamless adoption of new software tools',
-      'Conducting deep-dive technical troubleshooting on complex OS (Windows/macOS) and network configuration issues'
-    ],
-    technologies: ['Active Directory', 'Windows/macOS Administration', 'Network Configuration', 'Enterprise Security', 'Software Deployment']
-  },
-  {
     id: 1,
     title: 'Full-stack Developer',
     company: 'AI-Centric Labs',
@@ -173,6 +159,20 @@ const experiences: Experience[] = [
       'Optimized AI workflows for high-throughput processing'
     ],
     technologies: ['React', 'React Native', 'Django', 'LangChain', 'AI/ML', 'Distributed Systems']
+  },
+  {
+    id: 5,
+    title: 'Systems Support Specialist',
+    company: 'Arizona State University',
+    location: 'Tempe, AZ',
+    duration: 'October 2025 – Present',
+    description: 'Provide advanced technical support and system administration for university IT infrastructure, focusing on identity management and software deployment.',
+    achievements: [
+      'Managing enterprise-level identity access (Active Directory) and software deployment, gaining insight into large-scale IT infrastructure',
+      'Translating complex technical constraints to non-technical stakeholders to ensure seamless adoption of new software tools',
+      'Conducting deep-dive technical troubleshooting on complex OS (Windows/macOS) and network configuration issues'
+    ],
+    technologies: ['Active Directory', 'Windows/macOS Administration', 'Network Configuration', 'Enterprise Security', 'Software Deployment']
   },
   {
     id: 2,
